@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Layanan & Fasilitas - Klinik Medika Ceria</title>
+
+    <!-- Bootstrap 4 & Font Awesome CDN -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm main-navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"> 
+          <img src="images/logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2 logo-img">
+          <span class="brand-text">
+            <span class="brand-medika">Medika</span><br>
+            <span class="brand-ceria">Ceria</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendaftaran.html">Pendaftaran</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active-link" href="lihatlayanan.html">Lihat Layanan <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- KONTEN UTAMA LAYANAN & FASILITAS -->
+    <main role="main" class="container main-content">
+      
+      <!-- HEADER JUDUL HALAMAN -->
+      <div class="text-center mb-5">
+        <div class="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center shadow circle-icon-box">
+          <img src="images/layanan-klinik.jpg" alt="Layanan & Fasilitas" class="circle-img">
+        </div>
+        <h1 class="form-title display-4">Layanan & Fasilitas Klinik</h1>
+        <p class="lead text-muted">Kenyamanan Pasien dan Pelayanan Ramah adalah Prioritas Utama Kami</p>
+      </div>
+
+      <!-- FASILITAS 1: PELAYANAN STAF RAMAH & CEPT -->
+      <section id="pelayanan-ramah" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="images/fasilitas-klinik.jpg" alt="Pelayanan Staf Ramah" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-user-nurse mr-2"></i>Staf & Resepsionis Ramah</h3>
+            <p class="text-muted">Sejak pertama kali Anda melangkahkan kaki di Klinik Medika Ceria, tim resepsionis dan perawat kami siap menyambut dengan senyuman dan bantuan yang komunikatif.</p>
+            <ul>
+              <li>Registrasi pasien yang cepat dan responsif</li>
+              <li>Pendampingan ramah untuk pasien lansia dan anak-anak</li>
+              <li>Informasi alur pemeriksaan yang transparan</li>
+              <li>Sistem pendaftaran antrean online tanpa perlu menunggu lama</li>
+            </ul>
+            <a href="pendaftaran.html" class="btn btn-teal-primary mt-2">Daftar Kunjungan &raquo;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FASILITAS 2: RUANG TUNGGU NYAMAN & BERSIH -->
+      <section id="ruang-tunggu" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2">
+            <img src="images/layanan-klinik.jpg" alt="Ruang Tunggu Nyaman" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 order-md-1 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-couch mr-2"></i>Ruang Tunggu Nyaman & Higenis</h3>
+            <p class="text-muted">Kami menyediakan area tunggu yang luas, bersih, ber-AC, dan tenang untuk memastikan pasien beserta keluarga merasa nyaman selama berada di klinik.</p>
+            <ul>
+              <li>Kursi tunggu ergonomis & ruangan ber-AC dingin</li>
+              <li>Fasilitas Wi-Fi gratis & stasiun pengisian daya HP (charging station)</li>
+              <li>Area bermain aman khusus untuk anak-anak (Playground)</li>
+              <li>Sterilisasi ruangan secara berkala demi kebersihan maksimal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FASILITAS 3: POLI UMUM, GIGI & ANAK -->
+      <section id="poli-terpadu" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="images/stetoskop.jpg" alt="Ruang Periksa Dokter" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-stethoscope mr-2"></i>Ruang Periksa Dokter Terpadu</h3>
+            <p class="text-muted">Ruang konsultasi dan periksa dokter pribadi yang terpisah, menjaga privasi pasien dengan peralatan medis lengkap dan higienis.</p>
+            <ul>
+              <li>Konsultasi Dokter Umum & Spesialis secara mendalam</li>
+              <li>Poli Gigi terlengkap (Scaling, Tambal, & Cabut Gigi)</li>
+              <li>Poli Anak khusus pemeriksaan tumbuh kembang & imunisasi</li>
+              <li>Pemeriksaan tekanan darah, gula darah, dan konsultasi gaya hidup sehat</li>
+            </ul>
+            <a href="pendaftaran.html" class="btn btn-teal-primary mt-2">Pilih Poli & Daftar &raquo;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FASILITAS 4: LABORATORIUM MODERN -->
+      <section id="lab-modern" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2">
+            <img src="images/lab-modern.jpg" alt="Laboratorium Modern" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 order-md-1 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-vial-virus mr-2"></i>Fasilitas Laboratorium Modern</h3>
+            <p class="text-muted">Pemeriksaan tes diagnostik darah dan laboratorium yang dilakukan oleh analis berpengalaman dengan hasil presisi dan cepat.</p>
+            <ul>
+              <li>Pemeriksaan Darah Lengkap, Kolesterol, & Asam Urat</li>
+              <li>Tes Urin & Fungsi Organ (Ginjal / Hati)</li>
+              <li>Paket Medical Check-Up (MCU) Hemat & Terjangkau</li>
+              <li>Penerimaan hasil tes cepat secara digital via WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER KLINIK MEDIKA CERIA -->
+    <footer class="text-white pt-5 pb-4 footer-section">
+      <div class="footer-gradient"></div>
+
+      <div class="container text-left text-md-left">
+        <div class="row text-left text-md-left">
+
+          <!-- Profil Klinik -->
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center footer-title">
+              <i class="fa-solid fa-house-medical mr-2 icon-footer"></i>
+              Klinik Medika Ceria
+            </h5>
+            <p class="footer-desc">
+              Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, ramah, dan terjangkau bagi seluruh lapisan masyarakat.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 font-weight-bold footer-heading">Navigasi</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="carousel.html" class="footer-link">Beranda</a></li>
+              <li class="mb-2"><a href="pendaftaran.html" class="footer-link">Pendaftaran</a></li>
+              <li class="mb-2"><a href="lihatlayanan.html" class="footer-link">Layanan Medis</a></li>
+            </ul>
+          </div>
+
+          <!-- Layanan Populer -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="mb-4 font-weight-bold footer-heading">Layanan Populer</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="layanan.html#pelayanan-ramah" class="footer-link">Pelayanan Staf & Resepsionis</a></li>
+              <li class="mb-2"><a href="layanan.html#ruang-tunggu" class="footer-link">Fasilitas Ruang Tunggu</a></li>
+              <li class="mb-2"><a href="layanan.html#poli-terpadu" class="footer-link">Poli Umum & Gigi</a></li>
+              <li class="mb-2"><a href="layanan.html#lab-modern" class="footer-link">Laboratorium Medis</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 footer-divider">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="copyright-text mb-0">
+              &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 text-right">
+            <a href="#" class="btn btn-light rounded-circle shadow scroll-btn">
+              <i class="fa-solid fa-arrow-down icon-dark" style="transform: rotate(180deg);"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- JavaScript CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

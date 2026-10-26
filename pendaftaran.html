@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pendaftaran Online - Klinik Medika Ceria</title>
+
+    <!-- Bootstrap & Font Awesome CDN -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- External Custom CSS -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm main-navbar">
+        <a class="navbar-brand d-flex align-items-center" href="index.html"> 
+          <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2 logo-img">
+          <span class="brand-text">
+            <span class="brand-medika">Medika</span><br>
+            <span class="brand-ceria">Ceria</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active-link" href="pendaftaran.html">Pendaftaran <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="layanan.html">Lihat Layanan</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- FORM PENDAFTARAN -->
+    <main role="main" class="container main-content">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+          
+          <div class="text-center mb-4">
+            <h2 class="form-title">Formulir Pendaftaran Pasien</h2>
+            <p class="text-muted">Isi data diri Anda di bawah ini untuk memesan nomor antrean atau jadwal konsultasi secara praktis.</p>
+          </div>
+
+          <div class="card card-form p-4 p-md-5 bg-white">
+            <form id="formPendaftaran" action="#" method="POST">
+              
+              <!-- Nama Lengkap -->
+              <div class="form-group mb-3">
+                <label for="nama" class="form-label">Nama Lengkap Pasien</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-light"><i class="fa-solid fa-user icon-teal"></i></span>
+                  </div>
+                  <input type="text" class="form-control" id="nama" name="nama" placeholder="Contoh: Budi Santoso" required>
+                </div>
+              </div>
+
+              <!-- Nomor WhatsApp / HP & Tanggal Lahir -->
+              <div class="form-row">
+                <div class="form-group col-md-6 mb-3">
+                  <label for="nohp" class="form-label">Nomor WhatsApp/HP</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text bg-light"><i class="fa-solid fa-phone icon-teal"></i></span>
+                    </div>
+                    <input type="tel" class="form-control" id="nohp" name="nohp" placeholder="081234567890" required>
+                  </div>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="tgl_lahir" class="form-label">Tanggal Lahir</label>
+                  <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required>
+                </div>
+              </div>
+
+              <!-- Jenis Layanan / Poli -->
+              <div class="form-group mb-3">
+                <label for="poli" class="form-label">Pilih Layanan / Poli</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-light"><i class="fa-solid fa-hospital-user icon-teal"></i></span>
+                  </div>
+                  <select class="custom-select" id="poli" name="poli" required>
+                    <option value="" selected disabled>-- Pilih Poli / Layanan --</option>
+                    <option value="Poli Umum">Poli Umum</option>
+                    <option value="Poli Gigi">Poli Gigi</option>
+                    <option value="Laboratorium">Pemeriksaan Laboratorium</option>
+                    <option value="Konsultasi Spesialis">Konsultasi Dokter Spesialis</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Tanggal & Waktu Kunjungan -->
+              <div class="form-row">
+                <div class="form-group col-md-6 mb-3">
+                  <label for="tgl_kunjungan" class="form-label">Tanggal Kunjungan</label>
+                  <input type="date" class="form-control" id="tgl_kunjungan" name="tgl_kunjungan" required>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="jam_kunjungan" class="form-label">Sesi Jam Kunjungan</label>
+                  <select class="custom-select" id="jam_kunjungan" name="jam_kunjungan" required>
+                    <option value="" selected disabled>-- Pilih Sesi Jam --</option>
+                    <option value="Pagi (08.00 - 12.00)">Pagi (08.00 - 12.00)</option>
+                    <option value="Siang (13.00 - 16.00)">Siang (13.00 - 16.00)</option>
+                    <option value="Sore (16.30 - 20.00)">Sore (16.30 - 20.00)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Keluhan Singkat -->
+              <div class="form-group mb-4">
+                <label for="keluhan" class="form-label">Keluhan / Catatan Tambahan</label>
+                <textarea class="form-control" id="keluhan" name="keluhan" rows="3" placeholder="Tuliskan keluhan kesehatan atau catatan singkat jika ada..."></textarea>
+              </div>
+
+              <!-- Tombol Submit -->
+              <button type="submit" class="btn btn-submit btn-block py-3">
+                <i class="fa-solid fa-paper-plane mr-2"></i> Kirim Pendaftaran Online
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER KLINIK MEDIKA CERIA -->
+    <footer class="text-white pt-5 pb-4 footer-section">
+      <div class="footer-gradient"></div>
+
+      <div class="container text-left text-md-left">
+        <div class="row text-left text-md-left">
+
+          <!-- Profil Klinik -->
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center footer-title">
+              <i class="fa-solid fa-house-medical mr-2 icon-footer"></i>
+              Klinik Medika Ceria
+            </h5>
+            <p class="footer-desc">
+              Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
+            </p>
+          </div>
+
+          <!-- Navigasi -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="mb-4 font-weight-bold footer-heading">Navigasi</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html" class="footer-link">Beranda</a></li>
+              <li class="mb-2"><a href="pendaftaran.html" class="footer-link">Pendaftaran</a></li>
+              <li class="mb-2"><a href="layanan.html" class="footer-link">Layanan Medis</a></li>
+            </ul>
+          </div>
+
+          <!-- Layanan Populer -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h5 class="mb-4 font-weight-bold footer-heading">Layanan Populer</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="layanan.html#umum" class="footer-link">Konsultasi Dokter Umum</a></li>
+              <li class="mb-2"><a href="layanan.html#gigi" class="footer-link">Pemeriksaan Gigi</a></li>
+              <li class="mb-2"><a href="layanan.html#lab" class="footer-link">Pemeriksaan Laboratorium</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <hr class="mb-4 footer-divider">
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="copyright-text mb-0">
+              &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4 text-right">
+            <a href="#" class="btn btn-light rounded-circle shadow scroll-btn">
+              <i class="fa-solid fa-arrow-down icon-dark" style="transform: rotate(180deg);"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- JavaScript CDN Library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+
+    <!-- KODE JAVASCRIPT LANGSUNG DI DALAM HTML -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const formPendaftaran = document.getElementById('formPendaftaran');
+        const tglKunjunganInput = document.getElementById('tgl_kunjungan');
+
+        // Batasi tanggal minimal kunjungan adalah hari ini
+        if (tglKunjunganInput) {
+          const today = new Date().toISOString().split('T')[0];
+          tglKunjunganInput.setAttribute('min', today);
+        }
+
+        // Penanganan saat tombol submit diklik
+        if (formPendaftaran) {
+          formPendaftaran.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nama = document.getElementById('nama').value;
+            const poli = document.getElementById('poli').value;
+            const tglKunjungan = document.getElementById('tgl_kunjungan').value;
+            const jamKunjungan = document.getElementById('jam_kunjungan').value;
+
+            // Menampilkan notifikasi pemberitahuan
+            alert(`Terima kasih, ${nama}!\nPendaftaran Anda ke ${poli} pada tanggal ${tglKunjungan} (${jamKunjungan}) berhasil dikirim.\n\nPetugas kami akan menghubungi Anda melalui WhatsApp.`);
+
+            // Reset isi form
+            formPendaftaran.reset();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

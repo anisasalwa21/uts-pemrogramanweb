@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Layanan Medis dan Fasilitas Klinik Medika Ceria">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>Lihat Layanan - Klinik Medika Ceria</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load FontAwesome untuk Ikon (jika diperlukan untuk footer/fasilitas) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+      /* Efek Hover pada Menu Navigasi */
+      .navbar-nav .nav-link {
+        transition: all 0.3s ease;
+        border-radius: 15px;
+      }
+      .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+        color: #ffffff !important;
+      }
+      .navbar.shadow-sm {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
+      }
+      .navbar {
+        font-family: 'Georgia', 'times new roman';
+      }
+      .navbar-brand {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .navbar-nav .nav-link {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      /* Tambahan style untuk halaman layanan */
+      .service-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+        border-radius: 15px;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+      }
+      .service-icon-wrapper {
+        background-color: #085C5C;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -40px auto 20px;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .service-icon-wrapper i {
+        color: #fff;
+        font-size: 30px;
+      }
+      /* Banner Atas */
+      .hero-services {
+        background: linear-gradient(rgba(8, 92, 92, 0.8), rgba(8, 92, 92, 0.8)), url('/foto/klinik-slide1.jpg') center/cover;
+        padding: 100px 0 50px;
+        color: white;
+        margin-bottom: 60px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm" style="background-color: #085C5C; padding: 10px 20px;">
+        <a class="navbar-brand d-flex align-items-center" href="/carousel.html" style="color: #f9f7f7"> 
+          <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2" style="background: white; padding: 3px; border-radius: 50%;">
+          <span style="line-height: 1.1; font-weight: bold; font-size: 1.2rem;">
+            <span style="color: #FF6F61;">Medika</span><br>
+            <span style="color: #f6f7f7;">Ceria</span>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="carousel.html" style="color: #f9f7f7">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pendaftaran.html" style="color: #f9f7f7">Pendaftaran</a>
+            </li>
+            <!-- Navbar active dipindah ke Lihat Layanan -->
+            <li class="nav-item active">
+              <a class="nav-link" href="lihatlayanan.html" style="color: #f9f7f7">Lihat Layanan <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      
+      <!-- Hero Section Layanan -->
+      <section class="hero-services text-center mt-5">
+        <div class="container mt-4">
+          <h1 class="display-4 font-weight-bold">Layanan & Fasilitas Kami</h1>
+          <p class="lead">Solusi kesehatan komprehensif, terpercaya, dan profesional untuk Anda dan keluarga.</p>
+        </div>
+      </section>
+
+      <div class="container mb-5">
+        
+        <!-- Baris 1: Poli Utama -->
+        <div class="row text-center mt-5 pt-3">
+          
+          <!-- Poli Umum -->
+          <div class="col-lg-4 col-md-6 mb-5" id="umum">
+            <div class="card h-100 shadow-sm service-card pt-3">
+              <div class="service-icon-wrapper">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title font-weight-bold" style="color: #085C5C;">Poli Umum</h4>
+                <p class="card-text text-muted">Layanan konsultasi kesehatan umum, diagnosis awal, serta penanganan berbagai penyakit ringan hingga sedang oleh dokter berpengalaman.</p>
+                <ul class="text-left text-muted" style="font-size: 0.9rem;">
+                  <li>Konsultasi Kesehatan</li>
+                  <li>Pemeriksaan Fisik Dasar</li>
+                  <li>Pembuatan Surat Keterangan Sehat</li>
+                  <li>Penanganan Luka Ringan</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0 pb-4">
+                <a href="pendaftaran.html" class="btn text-white w-100" style="background-color: #006666; border-radius: 20px;">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Poli Gigi -->
+          <div class="col-lg-4 col-md-6 mb-5" id="gigi">
+            <div class="card h-100 shadow-sm service-card pt-3">
+              <div class="service-icon-wrapper">
+                <i class="fa-solid fa-tooth"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title font-weight-bold" style="color: #085C5C;">Poli Gigi</h4>
+                <p class="card-text text-muted">Perawatan kesehatan gigi dan mulut yang komprehensif mulai dari pembersihan hingga tindakan estetika dan operasi kecil.</p>
+                <ul class="text-left text-muted" style="font-size: 0.9rem;">
+                  <li>Pembersihan Karang Gigi (Scaling)</li>
+                  <li>Tambal & Cabut Gigi</li>
+                  <li>Perawatan Saluran Akar</li>
+                  <li>Pemutihan Gigi (Bleaching)</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0 pb-4">
+                <a href="pendaftaran.html" class="btn text-white w-100" style="background-color: #006666; border-radius: 20px;">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Poli Anak -->
+          <div class="col-lg-4 col-md-6 mb-5" id="anak">
+            <div class="card h-100 shadow-sm service-card pt-3">
+              <div class="service-icon-wrapper">
+                <i class="fa-solid fa-child"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title font-weight-bold" style="color: #085C5C;">Poli Anak</h4>
+                <p class="card-text text-muted">Layanan kesehatan khusus bayi dan anak yang ramah dan komprehensif, mulai dari pemeriksaan rutin hingga pemantauan tumbuh kembang.</p>
+                <ul class="text-left text-muted" style="font-size: 0.9rem;">
+                  <li>Pemeriksaan Kesehatan Anak</li>
+                  <li>Imunisasi & Vaksinasi</li>
+                  <li>Konsultasi Tumbuh Kembang</li>
+                  <li>Penanganan Penyakit Anak</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0 pb-4">
+                <a href="pendaftaran.html" class="btn text-white w-100" style="background-color: #006666; border-radius: 20px;">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Laboratorium -->
+          <div class="col-lg-4 col-md-6 mb-5" id="lab">
+            <div class="card h-100 shadow-sm service-card pt-3">
+              <div class="service-icon-wrapper">
+                <i class="fa-solid fa-microscope"></i>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title font-weight-bold" style="color: #085C5C;">Laboratorium</h4>
+                <p class="card-text text-muted">Fasilitas lab modern untuk menunjang penegakan diagnosis dokter. Hasil yang cepat, tepat, dan dapat dipertanggungjawabkan.</p>
+                <ul class="text-left text-muted" style="font-size: 0.9rem;">
+                  <li>Cek Darah Rutin & Lengkap</li>
+                  <li>Tes Gula Darah & Kolesterol</li>
+                  <li>Pemeriksaan Urine</li>
+                  <li>Medical Check-Up (MCU)</li>
+                </ul>
+              </div>
+              <div class="card-footer bg-white border-0 pb-4">
+                <a href="pendaftaran.html" class="btn text-white w-100" style="background-color: #006666; border-radius: 20px;">Daftar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- End Row 1 -->
+
+        <!-- Baris 2: Fasilitas Tambahan -->
+        <hr class="featurette-divider my-5">
+        
+        <h2 class="text-center font-weight-bold mb-5" style="color: #085C5C;">Fasilitas Penunjang</h2>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 order-md-2 mb-4">
+            <img class="img-fluid rounded shadow" src="foto/apoteker.jpg" alt="Fasilitas Apotek" style="height: 300px; width: 100%; object-fit: cover;">
+          </div>
+          <div class="col-md-6 order-md-1">
+            <h3 class="font-weight-bold" style="color: #085C5C;">Instalasi Farmasi (Apotek)</h3>
+            <p class="lead text-muted">Tersedia apotek yang beroperasi bersamaan dengan jam praktik klinik, menyediakan obat-obatan lengkap, terjamin keasliannya, dan diracik oleh Apoteker bersertifikat. Anda tidak perlu repot menebus resep di luar klinik.</p>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6 mb-4">
+            <img class="img-fluid rounded shadow" src="foto/ruang-tunggu.jpg" alt="Ruang Tunggu" style="height: 300px; width: 100%; object-fit: cover;">
+          </div>
+          <div class="col-md-6">
+            <h3 class="font-weight-bold" style="color: #085C5C;">Ruang Tunggu Nyaman</h3>
+            <p class="lead text-muted">Kenyamanan Anda adalah prioritas kami. Ruang tunggu dilengkapi dengan pendingin ruangan (AC), TV interaktif, air minum gratis, pojok bermain anak, serta Wi-Fi berkecepatan tinggi agar waktu menunggu terasa lebih menyenangkan.</p>
+          </div>
+        </div>
+
+      </div><!-- /.container -->
+
+    </main>
+
+    <!-- FOOTER KLINIK MEDIKA CERIA (Sama persis dengan index.html) -->
+    <footer class="text-white pt-5 pb-4" style="background-color: #1e293b; position: relative;">
+      <!-- Efek Bayangan / Gradasi Atas -->
+      <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: linear-gradient(to bottom, transparent, #1e293b);"></div>
+
+      <div class="container text-left text-md-left">
+        <div class="row text-left text-md-left">
+
+          <!-- Kolom 1: Profil / Deskripsi Klinik -->
+          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center" style="letter-spacing: 0.5px;">
+              <i class="fa-solid fa-house-medical mr-2" style="color: #63baba; font-size: 1.5rem;"></i>
+              Klinik Medika Ceria
+            </h5>
+            <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem;">
+              Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
+            </p>
+          </div>
+
+
+        <hr class="mb-4" style="border-top: 1px solid #334155;">
+
+        <!-- Bagian Hak Cipta & Tombol Kembali ke Atas -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p style="color: #94a3b8; font-size: 0.9rem;">
+              &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
+            </p>
+          </div>
+          
+          <!-- Tombol Panah (Scroll ke Atas) -->
+          <div class="col-4 col-md-4 text-right">
+    <a href="#" class="btn btn-light rounded-circle shadow d-inline-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+      <i class="fa-solid fa-arrow-up" style="color: #1e293b;"></i>
+    </a>
+  </div>
+</div>
+
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
