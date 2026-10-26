@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="id">
+  <header>
+        
+
+    <!-- Bootstrap 4 & Font Awesome CDN -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link href="carousel.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm main-navbar" style="background-color: #085C5C; padding: 10px 20px;">
+    
+    <!-- 1. LOGO DITUTUP DENGAN </a> TEPAT DI SINI -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: #f9f7f7"> 
+      <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2" style="background: white; padding: 3px; border-radius: 50%;">
+      <span style="line-height: 1.1; font-weight: bold; font-size: 1.2rem;">
+        <span style="color: #FF6F61;">Medika</span><br>
+        <span style="color: #f6f7f7;">Ceria</span>
+      </span>
+    </a> <!-- PERHATIKAN: Tag </a> penutup logo harus ada di sini! -->
+
+    <!-- 2. TOMBOL MOBILE MENU -->
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- 3. MENU NAVIGASI (Gunakan ml-auto agar bergeser ke kanan) -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#layanan" style="color: #f9f7f7">Beranda <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pendaftaran.html" style="color: #f9f7f7">Pendaftaran</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="layanan.html" style="color: #f9f7f7">Lihat Layanan</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</header>
+
+    <!-- KONTEN UTAMA LABORATORIUM -->
+    <main role="main" class="container main-content">
+      
+      <!-- HEADER JUDUL HALAMAN -->
+      <div class="text-center mb-5">
+        <div class="rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center shadow circle-icon-box">
+          <img src="foto/lab-modern.jpg" alt="Laboratorium Medika Ceria" class="circle-img">
+        </div>
+        <h1 class="form-title display-4">Laboratorium Modern & Canggih</h1>
+        <p class="lead text-muted">Diagnosis Akurat, Cepat, dan Higienis Didukung Teknologi Medis Terkini</p>
+      </div>
+
+      <!-- SEKSI 1: PERALATAN MEDIS CANGGIH & OTOMATIS -->
+      <section id="alat-canggih" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="foto/peralatanmedis.jpg" alt="Peralatan Laboratorium Canggih" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-microscope mr-2"></i>Peralatan & Teknologi Medis Terkini</h3>
+            <p class="text-muted">Laboratorium Klinik Medika Ceria dilengkapi dengan alat analisis otomatis (*Hematology & Clinical Chemistry Analyzer*) berstandar internasional untuk meminimalkan *human error* dan menjamin akurasi hasil tes.</p>
+            <ul>
+              <li><strong>Pemeriksaan Hematologi Otomatis:</strong> Analisis sel darah lengkap hanya dalam hitungan menit.</li>
+              <li><strong>Alat Imunologi & Kimia Klinik Canggih:</strong> Deteksi kadar gula darah, kolesterol, fungsi hati, serta ginjal secara presisi.</li>
+              <li><strong>Sistem Sterilisasi UV & HEPA Filter:</strong> Menjaga ruang sampel tetap higienis dan bebas kontaminasi.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEKSI 2: JENIS PEMERIKSAAN LAB -->
+      <section id="jenis-layanan-lab" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-2">
+            <img src="foto/pemeriksalab.jpg" alt="Pemeriksaan Sampel Darah" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 order-md-1 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-vial-circle-check mr-2"></i>Layanan Pemeriksaan Lengkap</h3>
+            <p class="text-muted">Kami melayani berbagai jenis tes laboratorium untuk kebutuhan pemeriksaan rutin maupun rujukan dokter:</p>
+            <ul>
+              <li><strong>Tes Darah Lengkap:</strong> Hemoglobin, Leukosit, Trombosit, LED, dan Profil Anemia.</li>
+              <li><strong>Profil Metabolik & Lemak:</strong> Kolesterol Total, HDL, LDL, Trigliserida, & Asam Urat.</li>
+              <li><strong>Pemeriksaan Diabetes:</strong> Gula Darah Puasa, Sewaktu, & Tes HbA1c.</li>
+              <li><strong>Tes Urin & Feses Lengkap:</strong> Deteksi infeksi saluran kemih dan pencernaan.</li>
+              <li><strong>Paket Medical Check-Up (MCU):</strong> Skrining kesehatan berkala untuk individu maupun karyawan.</li>
+            </ul>
+            <a href="pendaftaran.html" class="btn btn-teal-primary mt-2">Daftar Tes Lab Sekarang &raquo;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEKSI 3: KEUNGGULAN HASIL DIGITAL & PENAMBILAN SAMPEL NYAMAN -->
+      <section id="keunggulan-lab" class="card card-form p-4 p-md-5 mb-5 bg-white">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="foto/sampel.jpg" alt="Pengambilan Sampel Nyaman" class="img-fluid rounded shadow-sm featurette-img">
+          </div>
+          <div class="col-md-7 mt-3 mt-md-0">
+            <h3 style="color: #085C5C;"><i class="fa-solid fa-file-medical mr-2"></i>Hasil Cepat & Serba Digital</h3>
+            <p class="text-muted">Proses pengambilan darah dilakukan oleh Tenaga Analis Kesehatan (Flebotomis) yang berpengalaman dan ramah sehingga minim rasa sakit.</p>
+            <ul>
+              <li><strong>Hasil Cepat (Sameday Service):</strong> Hasil pemeriksaan umum dapat selesai pada hari yang sama.</li>
+              <li><strong>Laporan Digital via WhatsApp / PDF:</strong> Hasil lab dikirimkan langsung ke ponsel Anda tanpa perlu datang mengambil kertas fisik.</li>
+              <li><strong>Privasi Data Terjamin:</strong> Seluruh rekam medis dan hasil laboratorium disimpan dalam sistem komputer terenkripsi.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER KLINIK MEDIKA CERIA -->
+ <footer class="text-white pt-5 pb-4" style="background-color: #1e293b; position: relative;">
+  <!-- Efek Bayangan / Gradasi Atas -->
+  <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: linear-gradient(to bottom, transparent, #1e293b);"></div>
+
+  <div class="container text-left text-md-left">
+    <div class="row text-left text-md-left">
+
+      <!-- Kolom 1: Profil / Deskripsi Klinik -->
+      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center" style="letter-spacing: 0.5px;">
+          <i class="fa-solid fa-house-medical mr-2" style="color: #63baba; font-size: 1.5rem;"></i>
+          Klinik Medika Ceria
+        </h5>
+        <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem;">
+          Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
+        </p>
+      </div>
+
+    <hr class="mb-4" style="border-top: 1px solid #334155;">
+
+   <!-- Bagian Hak Cipta & Tombol Kembali ke Atas -->
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p style="color: #94a3b8; font-size: 0.9rem;">
+              &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
+            </p>
+          </div>
+          
+          <!-- Tombol Panah (Scroll ke Atas) -->
+          <div class="col-4 col-md-4 text-right">
+    <a href="#" class="btn btn-light rounded-circle shadow d-inline-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+      <i class="fa-solid fa-arrow-up" style="color: #1e293b;"></i>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+
+  </div>
+</footer>
+
+    <!-- JavaScript CDN -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./assets/js/vendor/popper.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>

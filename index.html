@@ -11,76 +11,18 @@
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- Load FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Panggil file CSS yang baru kita buat -->
     <link href="carousel.css" rel="stylesheet">
-
-    <li class="nav-item active">
-  <!-- UBAH DI SINI: href="Beranda" menjadi href="#layanan" -->
-  <a class="nav-link" href="#layanan">Beranda <span class="sr-only">(current)</span></a>
-</li>
-
-  
-  <style>
-    /* Efek Hover pada Menu Navigasi */
-.navbar-nav .nav-link {
-  transition: all 0.3s ease;
-  border-radius: 15px;
-}
-
-.navbar-nav .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #ffffff !important;
-}
-
-/* Penyesuaian bayangan Navbar */
-.navbar.shadow-sm {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15) !important;
-}
-
-      /* Mengatur font untuk seluruh navbar */
-      .navbar {
-        font-family: 'Georgia', 'times new roman';
-      }
-
-      /* Mengatur font dan ukuran teks Nama Klinik */
-      .navbar-brand {
-        font-size: 1.3rem;
-        font-weight: bold;
-      }
-
-      /* Mengatur font dan ukuran teks Menu Navigasi */
-      .navbar-nav .nav-link {
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      /* sesuaiin gambar carousel */
-      .carousel-item {
-        height: 35rem;
-        background-color: #777;
-      }
-
-      .carousel-item > img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        height: 35rem;
-        object-fit: cover;
-      }
-
-
-      html {
-  scroll-behavior: smooth;
-}
-        </style>
-      </head>
-      <body>
+  </head>
+  <body>
 
         <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm" style="background-color: #085C5C; padding: 10px 20px;">
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm" style="background-color: #085C5C; padding: 10px 20px;">
 
-        <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: #f9f7f7"> 
+          <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: #f9f7f7"> 
           <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2" style="background: white; padding: 3px; border-radius: 50%;">
           <span style="line-height: 1.1; font-weight: bold; font-size: 1.2rem;">
             <span style="color: #FF6F61;">Medika</span><br>
@@ -95,7 +37,7 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <!-- Href diarahkan ke #layanan -->
-              <a class="nav-link" href="beranda.html" style="color: #f9f7f7">Beranda <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html" style="color: #f9f7f7">Beranda <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="pendaftaran.html" style="color: #f9f7f7">Pendaftaran</a>
@@ -117,24 +59,21 @@
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active" style ="height:35rem; background: linear-gradient(rgba(13,148,136,0.75), rgba(13,148,136,0.75)), center/cover;">
-            <img class="first-slide d-block w-100" src="foto/klinik-slide1.jpg" class="first-slide d-block w-100" alt="Foto Klinik 1">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 148, 136, 0.55);"></div>
-            <div class="container h-100 d-flex align-items-center"  style="position: relative; z-index: 2;" >
-              <div class="carousel-caption text-left">
-                <h1>Selamat Datang Di Klinik<br>Medika Ceria</h1>
-                <p>Klinik kami siap memberikan pelayanan terbaik untuk kesehatan Anda dan keluarga</p>
-                <div>
-                <a class="btn text-white mr-2" href="#" style="background:#006666; border-radius:30px; padding:8px 20px;">Daftar Konsultasi</a>
-                <a class="btn text-white" href="#" style="border:2px solid #fff; border-radius:30px; padding:8px 20px;">Lihat Layanan</a>
-              </div>
+<div class="carousel-inner">
+          
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active" style="height: 35rem; position: relative;">
+            <img class="d-block w-100" src="foto/klinik-slide1.jpg" alt="Foto Klinik 1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 148, 136, 0.55); z-index: 2;"></div>
+              <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 3;">
+                 <div class="text-white text-left mt-5">
+                <h1 style="font-weight: bold; font-size: 3rem;">Selamat Datang Di Klinik<br>Medika Ceria</h1>
+                <p style="font-size: 1.2rem;">Klinik kami siap memberikan pelayanan terbaik untuk kesehatan Anda dan keluarga</p>
+               </div>
             </div>
           </div>
-          </div>
 
-          <div class="carousel-item" style="height: 35rem; position: relative;">
+<div class="carousel-item" style="height: 35rem; position: relative;">
   <img class="second-slide d-block w-100" src="foto/timmedis-slide2.jpg" alt="Foto Dokter" style="height: 35rem; object-fit: cover; object-position: center top;">
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 148, 136, 0.55);"></div>
   <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 2;">
@@ -142,7 +81,7 @@
       <h1>Tim Dokter Profesional</h1>
       <p>Konsultasikan masalah kesehatan Anda langsung dengan ahlinya</p>
       <div>
-        <a class="btn text-white" href="jadwal-dokter.html" style="background:#006666; border-radius:30px; padding:8px 20px;">Lihat Jadwal Dokter</a>
+        <a class="btn text-white" href="layananmedis.html" style="background:#006666; border-radius:30px; padding:8px 20px;">Lihat Jadwal Dokter</a>
       </div>
     </div>
   </div>
@@ -150,14 +89,14 @@
 
 
 <div class="carousel-item" style="height: 35rem; position: relative;">
-  <img class="third-slide d-block w-100" src="foto/labor-slide3.jpg" alt="Foto Laboratorium" style="height: 35rem; object-fit: cover; object-position: center top;"">
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 148, 136, 0.55);"></div>
-  <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 2;">
-    <div class="carousel-caption text-right">
-      <h1>Laboratorium Lengkap</h1>
-      <p>Fasilitas pemeriksaan laboratorium yang cepat, tepat, dan akurat</p>
-      <div>
-      </div>
+   <img class="third-slide d-block w-100" src="foto/labor-slide3.jpg" alt="Foto Laboratorium" style="height: 35rem; object-fit: cover; object-position: center top;"">
+     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(13, 148, 136, 0.55);"></div>
+       <div class="container h-100 d-flex align-items-center" style="position: relative; z-index: 2;">
+         <div class="carousel-caption text-right">
+           <h1>Laboratorium Lengkap</h1>
+             <p>Fasilitas pemeriksaan laboratorium yang cepat, tepat, dan akurat</p>
+          <div>
+       </div>
     </div>
   </div>
 </div>
@@ -192,7 +131,7 @@
     <h2>Layanan Medis</h2>
     <p>Poli Umum, Poli Gigi, dan layanan kesehatan lainnya.</p>
     <p>
-      <a class="btn text-white" href="layananmedis" style="background-color: #006666; border-radius: 20px; padding: 6px 20px;">Lihat Detail &raquo;</a>
+      <a class="btn text-white" href="layananmedis.html" style="background-color: #006666; border-radius: 20px; padding: 6px 20px;">Lihat Detail &raquo;</a>
     </p>
   </div>
 
@@ -204,7 +143,9 @@
     <h2>Layanan & Fasilitas </h2>
     <p>Kenyaman Custumer Nomor Satu Bagi Kami</p>
     <p>
-     
+      <a class="btn text-white" href="layananfasilitas.html" style="background-color: #006666; border-radius: 20px; padding: 6px 20px;">Lihat Detail &raquo;</a>
+     </p>
+    </div>
 
   <!-- Kolom 3: Laboratorium -->
   <div class="col-lg-4 mb-4">
@@ -214,7 +155,7 @@
     <h2>Laboratorium</h2>
     <p>Pemeriksaan darah, urine, dan tes kesehatan rutin yang cepat serta akurat.</p>
     <p>
-      <a class="btn text-white" href="layanan.html#lab" style="background-color: #006666; border-radius: 20px; padding: 6px 20px;">Lihat Detail &raquo;</a>
+      <a class="btn text-white" href="laboratorium.html" style="background-color: #006666; border-radius: 20px; padding: 6px 20px;">Lihat Detail &raquo;</a>
     </p>
   </div>
 
@@ -227,7 +168,7 @@
         <div class="row featurette align-items-center">
           <div class="col-md-7">
             <h2 class="featurette-heading">Tim Dokter Profesional & Ramah <span class="text-muted">Siap Melayani Anda</span></h2>
-            <p class="lead">Kelinik Kami didukung dengan tenaga medis yang profesional, berpengalaman, dan siap untuk memberikan konsultasi yang komprehensif, penanganan yang tepat, serta memberikan pelayanan yang mengutamakan kenyamanan pasien</p>
+            <p class="lead">Klinik Kami didukung dengan tenaga medis yang profesional, berpengalaman, dan siap untuk memberikan konsultasi yang komprehensif, penanganan yang tepat, serta memberikan pelayanan yang mengutamakan kenyamanan pasien</p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto rounded shadow" src="foto/konsultasi-medis.jpg" alt="konsultasi-medis" style="width: 500px; height: 350px; object-fit: cover;">
@@ -253,7 +194,7 @@
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Pendaftaran Yang Flaksibel & praktis <span class="text-muted">Tanpa drama.</span></h2>
-            <p class="lead">apatkan nomor antrean dan jadwalkan konsultasi dokter pilihan keluarga Anda secara langsung melalui website kami sebelum datang ke klinik</p>
+            <p class="lead">Dapatkan nomor antrean dan jadwalkan konsultasi dokter pilihan keluarga Anda secara langsung melalui website kami sebelum datang ke klinik</p>
           </div>
           <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto rounded shadow" src="foto/fasilitas-klinik.jpg" alt="Fasilitas_klinik">
@@ -268,48 +209,78 @@
 
 
       <!-- FOOTER -->
-      <!-- FOOTER KLINIK MEDIKA CERIA -->
-<footer class="text-white pt-5 pb-4" style="background-color: #1e293b; position: relative;">
-  <!-- Efek Bayangan / Gradasi Atas -->
-  <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: linear-gradient(to bottom, transparent, #1e293b);"></div>
+      <!-- KONTAK & LOKASI KLINIK -->
+<section id="kontak" class="py-5 bg-white">
+  <div class="container">
+    <div class="card border-0 shadow-lg overflow-hidden" style="border-radius: 25px; background-color: #1e293b;">
+      <div class="row no-gutters">
+        
+        <!-- KOLOM KIRI: INFO KONTAK (TAMPILAN GELAP SESUAI KODE KAMU) -->
+        <div class="col-lg-6 p-4 p-lg-5 text-white d-flex flex-column justify-content-center">
+          <h2 class="h3 font-weight-bold mb-3 text-white">Kunjungi Klinik Kami</h2>
+          <p class="mb-4" style="color: #cbd5e1; font-size: 0.95rem;">
+            Punya keluhan kesehatan? Jangan ragu untuk datang atau hubungi kami untuk mengatur jadwal pemeriksaan.
+          </p>
 
-  <div class="container text-left text-md-left">
-    <div class="row text-left text-md-left">
+          <div class="mb-4">
+            <!-- Alamat -->
+            <div class="d-flex align-items-start mb-3">
+              <i class="fa-solid fa-map-location-dot text-2xl mr-3 mt-1" style="color: #63baba; font-size: 1.5rem;"></i>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-white" style="font-size: 1.1rem;">Alamat</h5>
+                <p class="mb-0" style="color: #cbd5e1; font-size: 0.9rem;">
+                  Jl. Jenderal Sudirman No. 123<br>
+                  Kec. Ilir Timur I, Kota Palembang<br>
+                  Sumatera Selatan 30129
+                </p>
+              </div>
+            </div>
 
-      <!-- Kolom 1: Profil / Deskripsi Klinik -->
-      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-        <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center" style="letter-spacing: 0.5px;">
-          <i class="fa-solid fa-house-medical mr-2" style="color: #63baba; font-size: 1.5rem;"></i>
-          Klinik Medika Ceria
-        </h5>
-        <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem;">
-          Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
-        </p>
-      </div>
-
-    <hr class="mb-4" style="border-top: 1px solid #334155;">
-
-   <!-- Bagian Hak Cipta & Tombol Kembali ke Atas -->
-        <div class="row align-items-center">
-          <div class="col-md-7 col-lg-8">
-            <p style="color: #94a3b8; font-size: 0.9rem;">
-              &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
-            </p>
+            <!-- Jam Operasional -->
+            <div class="d-flex align-items-start mb-3">
+              <i class="fa-solid fa-clock text-2xl mr-3 mt-1" style="color: #63baba; font-size: 1.5rem;"></i>
+              <div>
+                <h5 class="font-weight-bold mb-1 text-white" style="font-size: 1.1rem;">Jam Operasional</h5>
+                <p class="mb-0" style="color: #cbd5e1; font-size: 0.9rem;">
+                  Senin - Sabtu: 08.00 - 21.00 WIB<br>
+                  Minggu: Tutup
+                </p>
+              </div>
+            </div>
           </div>
-          
-          <!-- Tombol Panah (Scroll ke Atas) -->
-          <div class="col-4 col-md-4 text-right">
-    <a href="#" class="btn btn-light rounded-circle shadow d-inline-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
-      <i class="fa-solid fa-arrow-up" style="color: #1e293b;"></i>
-    </a>
-  </div>
-</div>
-</div>
-  </div>
 
+          <!-- Tombol WhatsApp -->
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-success font-weight-bold py-3 px-4 mt-2 d-flex align-items-center justify-content-center shadow" style="border-radius: 50px; background-color: #25D366; border: none;">
+            <i class="fa-brands fa-whatsapp fa-lg mr-2"></i> Hubungi via WhatsApp
+          </a>
+        </div>
+
+        <!-- KOLOM KANAN: PETA GOOGLE MAPS -->
+        <div class="col-lg-6" style="min-height: 350px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.42334812822!2d104.66035070094951!3d-2.9832791632731115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1698765432101!5m2!1sid!2sid" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 100%;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 text-center text-white-50" style="background-color: #0f172a; border-top: 1px solid #1e293b;">
+  <div class="container">
+    <p class="mb-0" style="color: #9fadc1; font-size: 0.9rem;">
+      &copy; 2026 Klinik Medika Ceria Palembang. All rights reserved.
+    </p>
   </div>
 </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
