@@ -16,13 +16,14 @@
   <body>
 
     <!-- NAVBAR HEADER -->
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm main-navbar">
-        <a class="navbar-brand d-flex align-items-center" href="index.html"> 
-          <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2 logo-img">
-          <span class="brand-text">
-            <span class="brand-medika">Medika</span><br>
-            <span class="brand-ceria">Ceria</span>
+<header>
+         <nav class="navbar navbar-expand-md navbar-dark fixed-top shadow-sm" style="background-color: #085C5C; padding: 10px 20px;">
+
+          <a class="navbar-brand d-flex align-items-center" href="index.html" style="color: #f9f7f7"> 
+          <img src="logo-klinik.svg" alt="Logo Klinik Medika Ceria" width="45" height="45" class="mr-2" style="background: white; padding: 3px; border-radius: 50%;">
+          <span style="line-height: 1.1; font-weight: bold; font-size: 1.2rem;">
+            <span style="color: #FF6F61;">Medika</span><br>
+            <span style="color: #f6f7f7;">Ceria</span>
           </span>
         </a>
 
@@ -31,22 +32,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Beranda</a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link active-link" href="pendaftaran.html">Pendaftaran <span class="sr-only">(current)</span></a>
+              <!-- Href diarahkan ke #layanan -->
+              <a class="nav-link" href="index.html" style="color: #f9f7f7">Beranda <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="layanan.html">Lihat Layanan</a>
+              <a class="nav-link" href="pendaftaran.html" style="color: #f9f7f7">Pendaftaran</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lihatlayanan.html" style="color: #f9f7f7">Lihat Layanan</a>
             </li>
           </ul>
+          
         </div>
       </nav>
     </header>
 
     <!-- FORM PENDAFTARAN -->
-    <main role="main" class="container main-content">
+    <main role="main" class="container main-content mt-5 pt-5 mb-5"></main>
       <div class="row justify-content-center">
         <div class="col-md-8 col-lg-7">
           
@@ -139,62 +142,46 @@
     </main>
 
     <!-- FOOTER KLINIK MEDIKA CERIA -->
-    <footer class="text-white pt-5 pb-4 footer-section">
-      <div class="footer-gradient"></div>
+    <footer class="text-white pt-5 pb-4" style="background-color: #1e293b; position: relative;">
+  <!-- Efek Bayangan / Gradasi Atas -->
+  <div style="position: absolute; top: -20px; left: 0; width: 100%; height: 20px; background: linear-gradient(to bottom, transparent, #1e293b);"></div>
 
-      <div class="container text-left text-md-left">
-        <div class="row text-left text-md-left">
+  <div class="container text-left text-md-left">
+    <div class="row text-left text-md-left">
 
-          <!-- Profil Klinik -->
-          <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center footer-title">
-              <i class="fa-solid fa-house-medical mr-2 icon-footer"></i>
-              Klinik Medika Ceria
-            </h5>
-            <p class="footer-desc">
-              Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
-            </p>
-          </div>
+      <!-- Kolom 1: Profil / Deskripsi Klinik -->
+      <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold d-flex align-items-center" style="letter-spacing: 0.5px;">
+          <i class="fa-solid fa-house-medical mr-2" style="color: #63baba; font-size: 1.5rem;"></i>
+          Klinik Medika Ceria
+        </h5>
+        <p style="color: #cbd5e1; line-height: 1.6; font-size: 0.95rem;">
+          Komitmen kami adalah memberikan layanan kesehatan terbaik, modern, dan terjangkau bagi seluruh lapisan masyarakat.
+        </p>
+      </div>
 
-          <!-- Navigasi -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="mb-4 font-weight-bold footer-heading">Navigasi</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="index.html" class="footer-link">Beranda</a></li>
-              <li class="mb-2"><a href="pendaftaran.html" class="footer-link">Pendaftaran</a></li>
-              <li class="mb-2"><a href="layanan.html" class="footer-link">Layanan Medis</a></li>
-            </ul>
-          </div>
+    <hr class="mb-4" style="border-top: 1px solid #334155;">
 
-          <!-- Layanan Populer -->
-          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-            <h5 class="mb-4 font-weight-bold footer-heading">Layanan Populer</h5>
-            <ul class="list-unstyled">
-              <li class="mb-2"><a href="layanan.html#umum" class="footer-link">Konsultasi Dokter Umum</a></li>
-              <li class="mb-2"><a href="layanan.html#gigi" class="footer-link">Pemeriksaan Gigi</a></li>
-              <li class="mb-2"><a href="layanan.html#lab" class="footer-link">Pemeriksaan Laboratorium</a></li>
-            </ul>
-          </div>
-
-        </div>
-
-        <hr class="mb-4 footer-divider">
-
+   <!-- Bagian Hak Cipta & Tombol Kembali ke Atas -->
         <div class="row align-items-center">
           <div class="col-md-7 col-lg-8">
-            <p class="copyright-text mb-0">
+            <p style="color: #94a3b8; font-size: 0.9rem;">
               &copy; 2026 Klinik Medika Ceria. All Rights Reserved.
             </p>
           </div>
-          <div class="col-md-5 col-lg-4 text-right">
-            <a href="#" class="btn btn-light rounded-circle shadow scroll-btn">
-              <i class="fa-solid fa-arrow-down icon-dark" style="transform: rotate(180deg);"></i>
-            </a>
-          </div>
-        </div>
+          
+          <!-- Tombol Panah (Scroll ke Atas) -->
+          <div class="col-4 col-md-4 text-right">
+    <a href="#" class="btn btn-light rounded-circle shadow d-inline-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+      <i class="fa-solid fa-arrow-up" style="color: #1e293b;"></i>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
 
-      </div>
-    </footer>
+  </div>
+</footer>
 
     <!-- JavaScript CDN Library -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>

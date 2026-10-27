@@ -1,0 +1,51 @@
+/* Container Banner Header */
+.hero-banner {
+  position: relative;
+  /* Ganti URL ini dengan lokasi gambar latar belakang aslimu */
+  background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* Tinggi banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 65px; /* Mencegah tertutup navbar yang fixed-top */
+}
+
+/* Layer warna transparan (Overlay) yang menutupi gambar */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Warna #085C5C (Teal) dengan transparansi 85% */
+  background-color: rgba(8, 92, 92, 0.85); 
+  z-index: 1;
+}
+
+/* Memastikan teks berada di atas warna transparan */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Responsif untuk layar kecil (HP) */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
